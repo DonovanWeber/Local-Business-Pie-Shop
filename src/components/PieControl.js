@@ -41,8 +41,16 @@ class PieControl extends React.Component{
     this.setState({selectedPie: selectedPie})
   }
 
-  handlingBuyingPie = (id) => {
-    const selectedPie = this.state.mainPieList.filter
+  handleBuyingPie = (pieToBuy) => {
+    const pieBought = pieToBuy{quantity: pieToBuy.quantity - 1}
+    const editedMainPieList = this.state.mainPieList.filter(pie => pie.id !== this.state.selectedPie.id)
+    .concat();
+    
+    this.setState({
+        mainPieList: editedMainPieList,
+        selectedPie: null
+    });
+    
   }
 
 
@@ -56,7 +64,7 @@ class PieControl extends React.Component{
     if(this.state.selectedPie != null){
       currentlyVisibleState = <PieDetail 
       pie = {this.state.selectedPie}
-      onClickingBuy = {this.handlingBuyingPie} />
+      onClickingBuy = {this.handleBuyingPie} />
       buttonText="Return to Pie List"
     } else if (this.state.formVisibleOnPage){
       currentlyVisibleState = <NewPieForm 
