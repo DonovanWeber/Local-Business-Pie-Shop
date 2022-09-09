@@ -1,3 +1,20 @@
+# Pierre's Market of Sweet and Savory Treats
+
+#### Pierre's Market uses C# and Identity framework to make a registration based website. Users will have to register an account to access the ability to Create, Read, Update, and Delete orders in their account.
+
+## Technologies Used
+
+* JavaScript
+* REACT
+* Node
+* 
+
+
+## Description
+In Pierre's Market website a user must register an account by providing an email and password to store order information about different kinds of treats. Once a user is authenticated they will be allowed to add treats and add a flavor profile to them when created or vice versa add a flavor and a treat that fits with that flavor. 
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,3 +85,13 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+## Known Bugs
+* No known bugs if any are found please 
+contact me at [donovanweber03@gmail.com](mailto:donovanweber03@gmail.com) if any bugs are found.
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
+Copyright (c) 8/12/2022 Donovan Weber 
