@@ -5,9 +5,9 @@ function ReusableForm(props) {
   return (
     <React.Fragment>
       <form onSubmit={props.formSubmissionHandler}>
-        <input
+        <textarea
           type='text'
-          name='pies'
+          name='name'
           placeholder='Pie Name' />
         <input
           type='text'
