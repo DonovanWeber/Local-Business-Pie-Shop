@@ -42,9 +42,19 @@ class PieControl extends React.Component{
   }
 
   handleBuyingPie = (pieToBuy) => {
-    const pieBought = pieToBuy{quantity: pieToBuy.quantity - 1}
+    const selectedPie = this.state.mainPieList.filter(pie => pie.id === pieToBuy)[0];
+    console.log("quantity", selectedPie.quantity);
+    console.log("selectedPie:", selectedPie);
+    const boughtPie = (pie) => {
+      return {
+        ...pie,
+        quantity: selectedPie.quantity - 1
+      };
+    }
+    const updatedPie = boughtPie(selectedPie);
+    console.log("updatedPie:", updatedPie);
     const editedMainPieList = this.state.mainPieList.filter(pie => pie.id !== this.state.selectedPie.id)
-    .concat();
+    .concat(updatedPie);
     
     this.setState({
         mainPieList: editedMainPieList,
