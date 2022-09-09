@@ -42,7 +42,11 @@ class PieControl extends React.Component{
   }
 
   handleBuyingPie = (pieToBuy) => {
+    
     const selectedPie = this.state.mainPieList.filter(pie => pie.id === pieToBuy)[0];
+    if(selectedPie.quantity <= 0){
+      return "This Pie is No Longer Available";
+    } 
     console.log("quantity", selectedPie.quantity);
     console.log("selectedPie:", selectedPie);
     const boughtPie = (pie) => {

@@ -5,8 +5,8 @@ function Pie(props){
   return(
     <React.Fragment>
       <div onClick = {() => props.whenPieClicked(props.id)}>
-        <h3>{props.name}</h3>
-        <h4>{props.flavor}</h4>
+        <h3>Pie: {props.name}</h3>
+        <h4>Flavor: {props.flavor}</h4>
         <p><em>${props.price}</em></p>
         <p>Amount Left:{props.quantity}</p>
         <hr />
