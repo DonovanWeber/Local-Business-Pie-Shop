@@ -1,17 +1,17 @@
-# Pierre's Market of Sweet and Savory Treats
+# Pie Shop
 
-#### Pierre's Market uses C# and Identity framework to make a registration based website. Users will have to register an account to access the ability to Create, Read, Update, and Delete orders in their account.
+#### Pie Shop is a web application used to track the inventory of a shop in this case a Pie Shop. 
 
 ## Technologies Used
 
 * JavaScript
 * REACT
 * Node
-* 
+ 
 
 
 ## Description
-In Pierre's Market website a user must register an account by providing an email and password to store order information about different kinds of treats. Once a user is authenticated they will be allowed to add treats and add a flavor profile to them when created or vice versa add a flavor and a treat that fits with that flavor. 
+In Pie Shop you can add different pies with a description, price, and the quantity to then be sold and bought until it's un-stocked.
 
 
 

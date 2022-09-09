@@ -47,8 +47,6 @@ class PieControl extends React.Component{
     if(selectedPie.quantity <= 0){
       return "This Pie is No Longer Available";
     } 
-    console.log("quantity", selectedPie.quantity);
-    console.log("selectedPie:", selectedPie);
     const boughtPie = (pie) => {
       return {
         ...pie,
@@ -56,7 +54,6 @@ class PieControl extends React.Component{
       };
     }
     const updatedPie = boughtPie(selectedPie);
-    console.log("updatedPie:", updatedPie);
     const editedMainPieList = this.state.mainPieList.filter(pie => pie.id !== this.state.selectedPie.id)
     .concat(updatedPie);
     
