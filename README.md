@@ -13,12 +13,7 @@
 ## Description
 In Pie Shop you can add different pies with a description, price, and the quantity to then be sold and bought until it's un-stocked.
 
-<img
-src=“src/img/Diagram.jpg”
-raw=true
-alt=“Diagram”
-style=“margin-right: 10px;”
-/>
+![Component Diagram](src/img/Diagram.jpg)"
 
 # Getting Started with Create React App
 
